@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px;">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<title>入杭报备登记</title>
+		<link href="report/static/css/app.c5504672.css" rel="preload" as="style">
+		<link href="report/static/css/chunk-libs.d5651f54.css" rel="preload" as="style">
+		<link href="report/static/css/chunk-libs.d5651f54.css" rel="stylesheet">
+		<link href="report/static/css/app.c5504672.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="report/static/css/chunk-66dee19c.34bb70c0.css">
+		<link rel="stylesheet" type="text/css" href="report/static/css/chunk-073b216c.a880979d.css">
+		<link rel="stylesheet" type="text/css" href="report/static/css/chunk-3da685b4.99727508.css">
+		<link rel="stylesheet" type="text/css" href="report/static/css/chunk-e03f11fc.84b610a1.css">
+		<link rel="stylesheet" type="text/css" href="report/static/css/chunk-d233ef96.5ac2b640.css">
+		<link rel="stylesheet" type="text/css" href="report/static/css/chunk-2e53d2f0.477d1bad.css">
+	</head>
+	<body style="font-size: 36px;">
+		<div id="app">
+			<div data-v-e9b42b88="" class="body-container">
+				<section data-v-e9b42b88="">
+					<div data-v-e9b42b88="" class="welcome">
+						<img data-v-e9b42b88="" src="report/static/img/title-left.b92dc60c.png" alt="">
+					</div>
+					<div data-v-e9b42b88="" role="separator" class="divider van-divider van-divider--hairline van-divider--content-center" style="border-color: rgb(51, 51, 51); color: rgb(51, 51, 51); margin: 0px; padding: 0px 18px;">填报信息</div>
+					<div data-v-e9b42b88="" class="tips">
+						<img data-v-e9b42b88="" src="report/static/img/title-right.4d739ba2.png" alt="">
+					</div>
+				</section>
+				<form data-v-e9b42b88="" class="van-form">
+					<div data-v-e9b42b88="" class="history-info">最近报备时间：<span id="myTime1">0000-00-00 00:00:00</span> <span data-v-e9b42b88="" class="">（已申报）</span>
+					</div>
+					<div data-v-e9b42b88="" class="van-cell van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>类型</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<div class="van-field__control van-field__control--custom">
+									<div data-v-e9b42b88="" role="radiogroup" class="van-radio-group van-radio-group--horizontal">
+										<div data-v-e9b42b88="" role="radio" tabindex="0" aria-checked="true" class="van-radio van-radio--horizontal">
+											<div class="van-radio__icon van-radio__icon--round van-radio__icon--checked">
+												<i class="van-icon van-icon-success">
+													<!---->
+												</i>
+											</div>
+											<span class="van-radio__label">入杭</span>
+										</div>
+										<div data-v-e9b42b88="" role="radio" tabindex="-1" aria-checked="false" class="van-radio van-radio--horizontal">
+											<div class="van-radio__icon van-radio__icon--round">
+												<i class="van-icon van-icon-success">
+													<!---->
+												</i>
+											</div>
+											<span class="van-radio__label">离杭</span>
+										</div>
+										<div data-v-e9b42b88="" role="radio" tabindex="-1" aria-checked="false" class="van-radio van-radio--horizontal">
+											<div class="van-radio__icon van-radio__icon--round">
+												<i class="van-icon van-icon-success">
+													<!---->
+												</i>
+											</div>
+											<span class="van-radio__label">中转</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-v-e9b42b88="" class="van-cell van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>姓名</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<input type="text" placeholder="请填写姓名" class="van-field__control">
+							</div>
+						</div>
+					</div>
+					<div data-v-e9b42b88="" role="button" tabindex="0" class="van-cell van-cell--clickable van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>证件类型</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<input type="text" readonly="readonly" value="身份证" placeholder="请选择证件类型" class="van-field__control">
+							</div>
+						</div>
+					</div>
+					<!---->
+					<div data-v-e9b42b88="" role="button" tabindex="0" class="van-cell van-cell--clickable van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>证件号码</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<input type="text" name="idNum" placeholder="请填写证件号码" class="van-field__control">
+							</div>
+						</div>
+					</div>
+					<div data-v-e9b42b88="" class="van-number-keyboard van-number-keyboard--with-title" style="display: none;">
+						<div class="van-number-keyboard__header">
+							<button type="button" class="van-number-keyboard__close">完成</button>
+						</div>
+						<div class="van-number-keyboard__body">
+							<div class="van-number-keyboard__keys">
+								<div class="van-key__wrapper">
+									<div role="button" tabindex="0" class="van-key">1</div>
+								</div>
+								<div class="van-key__wrapper">
+									<div role="button" tabindex="0" class="van-key">2</div>
+								</div>
+								<div class="van-key__wrapper">
+									<div role="button" tabindex="0" class="van-key">3</div>
+								</div>
+								<div class="van-key__wrapper">
+									<div role="button" tabindex="0" class="van-key">4</div>
+								</div>
+								<div class="van-key__wrapper">
+									<div role="button" tabindex="0" class="van-key">5</div>
+								</div>
+								<div class="van-key__wrapper">
+									<div role="button" tabindex="0" class="van-key">6</div>
+								</div>
+								<div class="van-key__wrapper">
+									<div role="button" tabindex="0" class="van-key">7</div>
+								</div>
+								<div class="van-key__wrapper">
+									<div role="button" tabindex="0" class="van-key">8</div>
+								</div>
+								<div class="van-key__wrapper">
+									<div role="button" tabindex="0" class="van-key">9</div>
+								</div>
+								<div class="van-key__wrapper">
+									<div role="button" tabindex="0" class="van-key">X</div>
+								</div>
+								<div class="van-key__wrapper">
+									<div role="button" tabindex="0" class="van-key">0</div>
+								</div>
+								<div class="van-key__wrapper">
+									<div role="button" tabindex="0" class="van-key van-key--delete">
+										<svg viewBox="0 0 32 22" xmlns="http://www.w3.org/2000/svg" class="van-key__delete-icon">
+											<path d="M28.016 0A3.991 3.991 0 0132 3.987v14.026c0 2.2-1.787 3.987-3.98 3.987H10.382c-.509 0-.996-.206-1.374-.585L.89 13.09C.33 12.62 0 11.84 0 11.006c0-.86.325-1.62.887-2.08L9.01.585A1.936 1.936 0 0110.383 0zm0 1.947H10.368L2.24 10.28c-.224.226-.312.432-.312.73 0 .287.094.51.312.729l8.128 8.333h17.648a2.041 2.041 0 002.037-2.04V3.987c0-1.127-.915-2.04-2.037-2.04zM23.028 6a.96.96 0 01.678.292.95.95 0 01-.003 1.377l-3.342 3.348 3.326 3.333c.189.188.292.43.292.679 0 .248-.103.49-.292.679a.96.96 0 01-.678.292.959.959 0 01-.677-.292L18.99 12.36l-3.343 3.345a.96.96 0 01-.677.292.96.96 0 01-.678-.292.962.962 0 01-.292-.68c0-.248.104-.49.292-.679l3.342-3.348-3.342-3.348A.963.963 0 0114 6.971c0-.248.104-.49.292-.679A.96.96 0 0114.97 6a.96.96 0 01.677.292l3.358 3.348 3.345-3.348A.96.96 0 0123.028 6z" fill="currentColor"></path>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-v-e9b42b88="" role="button" tabindex="0" class="van-cell van-cell--clickable van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>出发地</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<input type="text" placeholder="点击选择省、市、区" class="van-field__control">
+							</div>
+						</div>
+					</div>
+					<div data-v-e9b42b88="" class="van-cell van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>出发地详细地址</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<textarea rows="1" placeholder="请填写来源详细地址" class="van-field__control" style="height: 24px;"></textarea>
+							</div>
+							<div class="van-field__word-limit">
+								<span class="van-field__word-num">0</span>/200
+							</div>
+						</div>
+					</div>
+					<div data-v-e9b42b88="" role="button" tabindex="0" class="van-cell van-cell--clickable van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>目的地</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<input type="text" placeholder="点击选择区、街道" class="van-field__control">
+							</div>
+						</div>
+					</div>
+					<!---->
+					<!---->
+					<!---->
+					<div data-v-e9b42b88="" class="van-cell van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>目的地详细地址</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<textarea rows="1" placeholder="请填写目的地详细地址（详细到门牌号）" class="van-field__control" style="height: 48px;"></textarea>
+							</div>
+							<div class="van-field__word-limit">
+								<span class="van-field__word-num">0</span>/200
+							</div>
+						</div>
+					</div>
+					<div data-v-e9b42b88="" role="button" tabindex="0" class="van-cell van-cell--clickable van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>目的地类型</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<input type="text" placeholder="请选择目的地类型" class="van-field__control">
+							</div>
+						</div>
+					</div>
+					<!---->
+					<div data-v-e9b42b88="" role="button" tabindex="0" class="van-cell van-cell--clickable van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>报备事由</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<input type="text" placeholder="请选择报备事由" class="van-field__control">
+							</div>
+						</div>
+					</div>
+					<!---->
+					<div data-v-e9b42b88="" role="button" tabindex="0" class="van-cell van-cell--clickable van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>交通方式</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<input type="text" placeholder="请选择交通方式" class="van-field__control">
+							</div>
+						</div>
+					</div>
+					<!---->
+					<div data-v-e9b42b88="" class="van-cell van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>预计到达时间</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<input type="text" placeholder="请填写预计到达时间" class="van-field__control">
+							</div>
+						</div>
+					</div>
+					<!---->
+					<div data-v-e9b42b88="" role="button" tabindex="0" class="van-cell van-cell--clickable van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>健康码颜色</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<input type="text" readonly="readonly" value="绿色" placeholder="请选择健康码颜色" class="van-field__control">
+							</div>
+						</div>
+					</div>
+					<!---->
+					<div data-v-e9b42b88="" class="van-cell van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>近7天内是否在风险城市停留或路过</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<div class="van-field__control van-field__control--custom">
+									<div data-v-e9b42b88="" role="radiogroup" class="van-radio-group van-radio-group--horizontal">
+										<div data-v-e9b42b88="" role="radio" tabindex="-1" aria-checked="false" class="van-radio van-radio--horizontal">
+											<div class="van-radio__icon van-radio__icon--round">
+												<i class="van-icon van-icon-success">
+													<!---->
+												</i>
+											</div>
+											<span class="van-radio__label">是</span>
+										</div>
+										<div data-v-e9b42b88="" role="radio" tabindex="-1" aria-checked="false" class="van-radio van-radio--horizontal">
+											<div class="van-radio__icon van-radio__icon--round van-radio__icon--checked">
+												<i class="van-icon van-icon-success">
+													<!---->
+												</i>
+											</div>
+											<span class="van-radio__label">否</span>
+										</div>
+									</div>
+								</div>
+								<div class="van-field__button">
+									<div data-v-e9b42b88="" class="btn">行程核验</div>
+									<!---->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-v-e9b42b88="" class="van-cell van-cell--required van-field">
+						<div class="van-cell__title van-field__label">
+							<span>是否有发烧、咳嗽、乏力等症状</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<div class="van-field__control van-field__control--custom">
+									<div data-v-e9b42b88="" role="radiogroup" class="van-radio-group van-radio-group--horizontal">
+										<div data-v-e9b42b88="" role="radio" tabindex="-1" aria-checked="false" class="van-radio van-radio--horizontal">
+											<div class="van-radio__icon van-radio__icon--round">
+												<i class="van-icon van-icon-success">
+													<!---->
+												</i>
+											</div>
+											<span class="van-radio__label">是</span>
+										</div>
+										<div data-v-e9b42b88="" role="radio" tabindex="-1" aria-checked="false" class="van-radio van-radio--horizontal">
+											<div class="van-radio__icon van-radio__icon--round van-radio__icon--checked">
+												<i class="van-icon van-icon-success">
+													<!---->
+												</i>
+											</div>
+											<span class="van-radio__label">否</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-v-e9b42b88="" class="van-cell van-field">
+						<div class="van-cell__title van-field__label">
+							<span>七天旅居史</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<div class="van-field__control van-field__control--custom">
+									<div data-v-e9b42b88="" class="persons">
+										<div data-v-e9b42b88="" class="btn">添加旅居史</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-v-e9b42b88="" class="van-cell van-field">
+						<div class="van-cell__title van-field__label">
+							<span>添加同行人信息</span>
+						</div>
+						<div class="van-cell__value van-field__value">
+							<div class="van-field__body">
+								<div class="van-field__control van-field__control--custom">
+									<div data-v-e9b42b88="" class="persons">
+										<div data-v-e9b42b88="" class="btn">添加同行人</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-v-e9b42b88="" class="btn-bar">
+						<div data-v-e9b42b88="" class="btn-fixed">
+							<button data-v-e9b42b88="" type="button" onclick="location.replace('success.html')" class="van-button van-button--info van-button--large van-button--block van-button--round">
+								<div data-v-e9b42b88="" class="van-button__content">
+									<span data-v-e9b42b88="" class="van-button__text">提交</span>
+								</div>
+							</button>
+						</div>
+					</div>
+				</form>
+				<div id="dialog_overlay" class="van-overlay" style="z-index: 2001;"></div>
+				<div id="dialog" data-v-e9b42b88="" role="dialog" aria-labelledby="报备提示" class="van-dialog" style="z-index: 2002;">
+					<div class="van-dialog__header">报备提示</div>
+					<div class="van-dialog__content">
+						<div data-v-e9b42b88="" class="dialog-wrap">
+							<div data-v-e9b42b88="" class="status-box">
+								<div data-v-e9b42b88="" class="status">已申报</div>
+							</div>
+							<div data-v-e9b42b88="" class="prompt">
+								<div data-v-e9b42b88="" class="history">
+									<div data-v-e9b42b88="" class="title">最近报备时间：</div>
+									<div data-v-e9b42b88="" class="time" id="myTime2">0000-00-00 00:00:00</div>
+								</div>
+								<div data-v-e9b42b88="" class="countdown">
+									<div data-v-e9b42b88="" class="title">距上次报备已过：</div>
+									<div data-v-e9b42b88="" class="time">
+										<!---->
+										<span data-v-e9b42b88="" class="num">0</span>小时<span data-v-e9b42b88="" class="num">0</span>分钟
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="van-hairline--top van-dialog__footer">
+						<button class="van-button van-button--default van-button--large van-dialog__cancel" onclick="closeMyModal()">
+							<div class="van-button__content">
+								<span class="van-button__text">关闭</span>
+							</div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function appendZeroAutomatically(val) {
+				return (val <= 9) ? '0' + val : val;
+			}
+			function closeMyModal() {
+				document.getElementById('dialog').style.display = 'none';
+				document.getElementById('dialog_overlay').style.display = 'none';
+			}
+			var currentTime = new Date().getFullYear() + '-' + appendZeroAutomatically(new Date().getMonth()+1) + '-' + appendZeroAutomatically(new Date().getDate()) + ' ' + appendZeroAutomatically(new Date().getHours()) + ':' + appendZeroAutomatically(new Date().getMinutes()) + ':' + appendZeroAutomatically(new Date().getSeconds());
+			console.log(currentTime);
+			document.getElementById('myTime1').innerHTML = currentTime;
+			document.getElementById('myTime2').innerHTML = currentTime;
+		</script>
+	</body>
+</html>
