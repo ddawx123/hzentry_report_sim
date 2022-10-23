@@ -372,7 +372,7 @@
 									<div data-v-e9b42b88="" class="title">距上次报备已过：</div>
 									<div data-v-e9b42b88="" class="time">
 										<!---->
-										<span data-v-e9b42b88="" class="num">0</span>小时<span data-v-e9b42b88="" class="num">0</span>分钟
+										<span data-v-e9b42b88="" class="num">2</span>小时<span data-v-e9b42b88="" class="num">37</span>分钟
 									</div>
 								</div>
 							</div>
@@ -396,7 +396,8 @@
 				document.getElementById('dialog').style.display = 'none';
 				document.getElementById('dialog_overlay').style.display = 'none';
 			}
-			var currentTime = new Date().getFullYear() + '-' + appendZeroAutomatically(new Date().getMonth()+1) + '-' + appendZeroAutomatically(new Date().getDate()) + ' ' + appendZeroAutomatically(new Date().getHours()) + ':' + appendZeroAutomatically(new Date().getMinutes()) + ':' + appendZeroAutomatically(new Date().getSeconds());
+			// var currentTime = new Date().getFullYear() + '-' + appendZeroAutomatically(new Date().getMonth()+1) + '-' + appendZeroAutomatically(new Date().getDate()) + ' ' + appendZeroAutomatically(new Date().getHours()) + ':' + appendZeroAutomatically(new Date().getMinutes()) + ':' + appendZeroAutomatically(new Date().getSeconds());
+			var currentTime = new Date().getFullYear() + '-' + appendZeroAutomatically(new Date().getMonth()+1) + '-' + appendZeroAutomatically(new Date().getDate()) + ' ' + appendZeroAutomatically(new Date().getHours() - 2) + ':37:08';
 			console.log(currentTime);
 			document.getElementById('myTime1').innerHTML = currentTime;
 			document.getElementById('myTime2').innerHTML = currentTime;
